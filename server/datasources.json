@@ -1,0 +1,15 @@
+ {
+"db": {
+"name":"db", 
+"connector":"memory"
+}, 
+"appDB": {
+  "host": "jonpecson.czm2nb0uwcar.ap-southeast-1.rds.amazonaws.com",
+  "port": 3306,
+  "database": "ewallet",
+  "username": "jon",
+  "password": "weareone",
+  "name": "appDB",
+  "connector": "mysql"
+}
+}

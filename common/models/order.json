@@ -1,0 +1,34 @@
+{
+  "name": "Order",
+  "plural": "Orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "orderNumber": {
+      "type": "number",
+      "required": true
+    },
+    "orderDate": {
+      "type": "date",
+      "required": true
+    },
+    "expectedDate": {
+      "type": "date",
+      "required": true
+    },
+    "shippedDate": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

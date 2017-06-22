@@ -1,0 +1,63 @@
+{
+  "name": "Customer",
+  "plural": "Customers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customerNumber": {
+      "type": "number",
+      "required": true
+    },
+    "customerFirstName": {
+      "type": "string",
+      "required": true
+    },
+    "customerLastName": {
+      "type": "string",
+      "required": true
+    },
+    "contactFirstName": {
+      "type": "string"
+    },
+    "contactLastName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "addressLine1": {
+      "type": "string"
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "creditLimit": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "id": {
+      "type": "hasMany",
+      "model": "order",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
